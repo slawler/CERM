@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import json
-#import geojson
 import fileinput
 import re
 import os
@@ -47,7 +46,6 @@ def mapit(new_map,geoj,geoj2,x,y,template):
                 newline = "map.setView([{},{}], 12)".format(y, x)
                 f_out.write(str(newline))    
 
-    #map.setView([ 42.06147811051676,  -74.87224712603198], 12);
 
     f_in.close()
     print('File Created: ', new_map)
